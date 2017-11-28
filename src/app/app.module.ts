@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {ClientComponent} from './client/client.component';
 import {Route, RouterModule, Routes} from "@angular/router";
+import {FormsModule} from "@angular/forms";
+import {HttpModule} from "@angular/http";
 
 const routes: Routes = [
   {path: 'client', component: ClientComponent},
@@ -17,7 +19,7 @@ const routes: Routes = [
     ClientComponent
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(routes)
+    BrowserModule, RouterModule.forRoot(routes), FormsModule, HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

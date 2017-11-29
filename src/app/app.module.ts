@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {ClientComponent} from './client/client.component';
 import {Route, RouterModule, Routes} from "@angular/router";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpModule} from "@angular/http";
 
 const routes: Routes = [
@@ -19,7 +19,7 @@ const routes: Routes = [
     ClientComponent
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(routes), FormsModule, HttpModule
+    BrowserModule, RouterModule.forRoot(routes), FormsModule, HttpModule, ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

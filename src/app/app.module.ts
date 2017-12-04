@@ -19,6 +19,7 @@ const routes: Routes = [
     AppComponent,
     ClientComponent,
     JuriNameValidator
+
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes), FormsModule, HttpModule, ReactiveFormsModule

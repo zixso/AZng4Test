@@ -6,6 +6,7 @@ import {ClientComponent} from './client/client.component';
 import {Route, RouterModule, Routes} from "@angular/router";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpModule} from "@angular/http";
+import {JuriNameValidator} from "./client/validator/juriName.validator";
 
 const routes: Routes = [
   {path: 'client', component: ClientComponent},
@@ -16,7 +17,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    ClientComponent
+    ClientComponent,
+    JuriNameValidator
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes), FormsModule, HttpModule, ReactiveFormsModule
